@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXUS Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="logo">
+                NEXUS<span>CALC</span>
+            </div>
+
+            <div class="header-buttons">
+                <button class="icon-btn" id="historyBtn">🕘</button>
+                <button class="icon-btn" id="copyBtn">📋</button>
+            </div>
+
+        </header>
+
+
+        <!-- Display -->
+        <section class="display">
+
+            <div class="expression" id="expression">
+                Ready...
+            </div>
+
+            <div class="result" id="result">
+                0
+            </div>
+
+        </section>
+
+
+        <!-- Scientific Buttons -->
+        <section class="scientific">
+
+            <button data-scientific="sin">sin</button>
+            <button data-scientific="cos">cos</button>
+            <button data-scientific="tan">tan</button>
+            <button data-scientific="log">log</button>
+            <button data-scientific="ln">ln</button>
+
+            <button data-scientific="sqrt">√</button>
+            <button data-scientific="square">x²</button>
+            <button data-scientific="cube">x³</button>
+            <button data-scientific="factorial">x!</button>
+            <button data-scientific="inverse">1/x</button>
+
+            <button data-constant="pi">π</button>
+            <button data-constant="e">e</button>
+            <button data-value="(">(</button>
+            <button data-value=")">)</button>
+            <button id="deleteBtn">⌫</button>
+
+        </section>
+
+
+        <!-- Main Calculator -->
+        <section class="buttons">
+
+            <button class="danger" id="clearBtn">
+                AC
+            </button>
+
+            <button id="deleteMainBtn">
+                DEL
+            </button>
+
+            <button id="percentBtn">
+                %
+            </button>
+
+            <button class="operator" data-value="÷">
+                ÷
+            </button>
+
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+
+            <button class="operator" data-value="×">
+                ×
+            </button>
+
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+
+            <button class="operator" data-value="-">
+                −
+            </button>
+
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+
+            <button class="operator" data-value="+">
+                +
+            </button>
+
+
+            <button class="zero" data-value="0">
+                0
+            </button>
+
+            <button data-value=".">
+                .
+            </button>
+
+            <button class="equal" id="equalBtn">
+                =
+            </button>
+
+        </section>
+
+    </div>
+
+
+    <!-- History Panel -->
+
+    <aside class="history" id="historyPanel">
+
+        <div class="history-header">
+
+            <h3>Calculation History</h3>
+
+            <button class="icon-btn" id="clearHistoryBtn">
+                🗑️
+            </button>
+
+        </div>
+
+        <div class="history-list" id="historyList">
+            <p class="empty-history">
+                No calculations yet.
+            </p>
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
