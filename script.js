@@ -11,9 +11,7 @@ const expressionElement =
     document.getElementById("expression");
 
 
-/* =========================
-   INSERT VALUE
-========================= */
+
 
 function insert(value) {
 
